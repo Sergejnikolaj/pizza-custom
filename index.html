@@ -1,0 +1,210 @@
+﻿<!doctype html>
+	<html>
+		<head>
+			<title>pizza</title>
+			<meta charset=utf-8>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+			<link href="css/style.css" rel="stylesheet">
+			<script src='js/scripts.js'></script>
+		</head>
+		<body>
+			<div class='wrapper'>
+				<h1>Пицца</h1>
+				<div class='left'>
+					<div class='picture'><img src='img/Custom_Pizza_3.jpg'></div>
+					<div class='stuffwrapper'>
+						<div id='link' class='open'>Ваша пицца состоит из</div>
+						<div id='hidden'>
+							<div class='mandatory' value='0'>
+								<select id='myselect'>
+									<option value='1'>Томатный</option>
+									<option value='2'>Ранч</option>
+									<option value='3'>Чесночный</option>
+									<option value='4'>Сливочный соус Альфредо</option>
+								</select>
+							</div>
+						</div>
+						<div id='lin' class='open'>Дополнительные начинки</div>
+						<div id='hidde'>
+							<div class='makechoice'><p>Выберите начинку вашей пиццы:</p>
+								<div class='mholder' data-stuff="meatstuff"><div class='meat active'></div></div>
+								<div class='sholder' data-stuff="seastuff"><div class='seafood'></div></div>
+								<div class='vholder' data-stuff="vegetstuff"><div class='vegetable'></div></div>
+								<div class='cholder' data-stuff="cheesestuff"><div class='cheese'></div></div>
+							</div>
+							<div class='stuff-holder'>
+								<div id='newmeat' class='meatstuff' value='15' data-quantity='0' data-weight='45'>
+									<div class='image1'><div class='counter'></div></div>
+									<div class='info'>Бекон<br>45г/15грн</div>
+									<div class='addstuff'>+</div>	
+									<div class='removestuff'>-</div>
+								</div>
+								<div id='newmeat2' class='meatstuff' value='14' data-quantity='0' data-weight='45'>
+									<div class='image2'><div class='counter'></div></div>
+									<div class='info'>Ветчина<br>45г/14грн</div>
+									<div class='addstuff'>+</div>	
+									<div class='removestuff'>-</div>
+								</div>
+								<div id='newmeat3' class='meatstuff' value='19' data-quantity='0' data-weight='50'>
+									<div class='image8'><div class='counter'></div></div>
+									<div class='info'>Итальянские<br>50г/19грн</div>
+									<div class='addstuff'>+</div>	
+									<div class='removestuff'>-</div>
+								</div>
+								<div id='newmeat4' class='meatstuff' value='11' data-quantity='0' data-weight='45'>
+									<div class='image9'><div class='counter'></div></div>
+									<div class='info'>Венские кол<br>45г/11грн</div>
+									<div class='addstuff'>+</div>	
+									<div class='removestuff'>-</div>
+								</div>
+								<div id='newmeat5' class='meatstuff' value='15' data-quantity='0' data-weight='45'>
+									<div class='image10'><div class='counter'></div></div>
+									<div class='info'>Баварские кол<br>45г/15грн</div>
+									<div class='addstuff'>+</div>	
+									<div class='removestuff'>-</div>
+								</div>
+								<div id='newsea' class='seastuff' value='34' data-quantity='0' data-weight='30'>
+									<div class='image3'><div class='counter'></div></div>
+									<div class='info'>Кальмары<br>30г/34грн</div>
+									<div class='addstuff'>+</div>	
+									<div class='removestuff'>-</div>
+								</div>
+								<div id='newsea2' class='seastuff' value='54' data-quantity='0' data-weight='35'>
+									<div class='image4'><div class='counter'></div></div>
+									<div class='info'>Креветки<br>35г/54грн</div>
+									<div class='addstuff'>+</div>	
+									<div class='removestuff'>-</div>
+								</div>
+								<div id='newveget' class='vegetstuff' value='2' data-quantity='0' data-weight='5'>
+									<div class='image5'><div class='counter'></div></div>
+									<div class='info'>Орегано<br>2г/5грн</div>
+									<div class='addstuff'>+</div>	
+									<div class='removestuff'>-</div>
+								</div>
+								<div id='newcheese' class='cheesestuff' value='33' data-quantity='0' data-weight='40'>
+									<div class='image6'><div class='counter'></div></div>
+									<div class='info'>Дор Блю<br>40г/33грн</div>
+									<div class='addstuff'>+</div>	
+									<div class='removestuff'>-</div>
+								</div>
+								<div id='newcheese' class='cheesestuff' value='20' data-quantity='0' data-weight='70'>
+									<div class='image7'><div class='counter'></div></div>
+									<div class='info'>Моцарелла<br>70г/20грн</div>
+									<div class='addstuff'>+</div>	
+									<div class='removestuff'>-</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='right'>
+					<div class='rightholder'>
+						<h2>Пицца "Cделай сам"</h2>
+						<p><b>Шаг №1</b> - Выберите тип коржа</p>
+						
+						<label class="container" id='amero'>
+							<div class='smallimage1'></div>
+							<div class='tiestoname'>Тесто "Американо"</div>
+						  <input type="radio" name='kind' value='65' data-weight='0' data-name='americano'>
+						  <span class="checkmark tiesto"></span>
+						</label>
+						<div  id='ameropic'><img src='img/americano.jpg'><b>Американо</b><br>Пицца на традиционном тесте - американского типа с пышными бортиками с сосиской внутри</div>
+						
+						<label class="container" id='italo'>
+						<div class='smallimage2'></div>
+						<div class='tiestoname'>Тесто "Итальяно"</div>
+						  <input type="radio" name='kind' value='65' data-weight='0' checked="checked" data-name='italiano'>
+						  <span class="checkmark tiesto"></span>
+						</label>
+						<div  id='italopic'><img src='img/italiano.jpg'><b>Итальяно корж</b><br>Пицца на тонком тесте без бортиков. Для любителей классического варианта итальянской пицы</div>
+						
+						<label class="container" id='hotdog'>
+						<div class='smallimage3'></div>
+						<div class='tiestoname'>Тесто "Хот-дог"</div>
+						  <input type="radio" name='kind' value='95' data-weight='0' data-name='hdog'>
+						  <span class="checkmark tiesto"></span>
+						</label>
+						<div  id='hotdogpic'><img src='img/hotdog.jpg'><b>Хот-дог корж</b><br>Пицца на традиционном тесте - американского типа с пышными бортиками с сосиской внутри</div>
+						
+						<label class="container" id='cheese'>
+						<div class='smallimage4'></div>
+						<div class='tiestoname'>Тесто "Сырный бортик"</div>
+						  <input type="radio" name='kind' value='95' data-weight='0' data-name='bortcheese'>
+						  <span class="checkmark tiesto"></span>
+						</label>
+						<div  id='cheesepic'><img src='img/cheese1.jpg'><b>Сырный бортик</b><br>Пицца на традиционном тесте - американского типа с пышными бортиками с сыром внутри</div>
+						
+						<p><b>Шаг №2</b> - Выберите размер пиццы:</p>
+						<label for='idsize35'>
+							<div class='sizenew35'>
+								<div class='size35'></div>
+								<label class="container forsize">
+								<div class='sizetext'>35 см</div>
+									<input type="radio" name='size' value='20' id='idsize35' data-weight='780'><!--disabled-->
+									<span class="checkmark checksize"></span>
+								</label>
+							</div>
+						</label>
+						<label for='idsize30'>
+							<div class='sizenew30'>
+								<div class='size30'></div>
+								<label class="container forsize">
+								<div class='sizetext'>30 см</div>
+									<input type="radio" name='size' checked="checked" id='idsize30' value='0' data-weight='560'>
+									<span class="checkmark checksize"></span>
+								</label>
+							</div>
+						</label>
+						<label for='idsize25'>
+							<div class='sizenew25'>
+								<div class='size25'></div>
+								<label class="container forsize">
+								<div class='sizetext'>25 см</div>
+									<input type="radio" name='size' id='idsize25' value='-10' data-weight='380'>
+									<span class="checkmark checksize"></span>
+								</label>
+							</div>
+						</label>
+						<div class='step3'><b>Шаг №3</b> - Бесплатный соус</div>
+							<label class="container freesauce">Гарлик
+								<div class='roundholder'>
+									<div class='round1'></div>
+								</div>
+								<input type="radio" name='sauce' checked="checked" value='0' data-weight='0'>
+								<span class="checkmark forsauce"></span>
+							</label>
+							<label class="container freesauce">Ранч
+								<div class='roundholder'>
+									<div class='round2'></div>
+								</div>
+								<input type="radio" name='sauce' value='0' data-weight='0'>
+								<span class="checkmark forsauce"></span>
+							</label>
+							<label class="container freesauce">Сальса
+								<div class='roundholder'>
+									<div class='round3'></div>
+								</div>
+								<input type="radio" name='sauce' value='0' data-weight='0'>
+								<span class="checkmark forsauce"></span>
+							</label>
+							<label class="container freesauce">Bbq
+								<div class='roundholder'>
+									<div class='round4'></div>
+								</div>
+								<input type="radio" name='sauce' value='0' data-weight='0'>
+								<span class="checkmark forsauce"></span>
+							</label>
+						<div class='priceholder'>
+							<div class='step4'><b>Цена</b>: </div>
+							<div id='price'>65</div>
+							<span>грн/</span>
+							<div id='weight'>560</div>
+							<span>гр</span>
+						</div>
+							<div class='incase'>В корзину</div>
+					</div>
+					
+				</div>
+			</div>
+		</body>
+	</html>
