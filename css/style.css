@@ -2,6 +2,10 @@
 					background-image: url(../img/bg.png);
 					background-repeat: repeat;
 					padding-bottom: 40px;
+					font-family: 'Open Sans';
+				}
+				body{
+					margin: 0;
 				}
 				.left{
 					float: left;
@@ -18,7 +22,7 @@
 				.right{
 					float: right;
 					width: 50.001%;
-					min-height: 960px;
+					min-height: 1000px;
 					background-color: #fffaf4;
 					overflow: hidden;
 				}
@@ -29,7 +33,7 @@
 				.left{
 					float: left;
 					width: 50%;
-					min-height: 960px;
+					min-height: 1000px;
 					background-color: white;
 					overflow: hidden;
 				}
@@ -47,6 +51,8 @@
 				}
 				#hidden .mandatory{
 					display: block;
+					width: 24.2%;
+					height: 111px;
 				}
 				#ameropic, #italopic, #hotdogpic, #cheesepic{
 					display: none;
@@ -59,7 +65,6 @@
 					width: 29%;
 					background-color: white;
 					text-align: center;
-					#border: 1px solid black;
 					padding-top: 9px;
 					padding-bottom: 22px;
 					overflow: hidden;
@@ -121,10 +126,13 @@
 				}
 				#link, #lin{
 					border: 1px solid #eee;
-					width: 80%;
+					width: 74.7%;
 					height: 40px;
 					background-color: #fffaf4;
 					margin-right: 130px;
+					line-height: 40px;
+					vertical-align: middle;
+					padding-left: 4%;
 				}
 				.open{
 					background-image: url(../img/topping-arrow-down.png);
@@ -239,6 +247,7 @@
 				}
 				#price{
 					float: left;
+					font-size: 36px;
 				}
 				.mandatory, .mandatory2{
 					float: left;
@@ -325,7 +334,7 @@
 				.meatstuff, .seastuff, .vegetstuff, .cheesestuff{
 					float: left;
 					width: 24.2%;
-					height: 106px;
+					height: 111px;
 					border: 1px solid silver;
 					background-color: white;
 					transition: all .3s linear;
@@ -392,6 +401,11 @@
 					width: 100%;
 					text-align: center;
 					font-size: 11px;
+					line-height: 12px;
+					margin-bottom: 5%;
+				}
+				.info span{
+					color:#8f795f;
 				}
 				.counter{
 					width:30px;
@@ -411,12 +425,22 @@
 					width: 100%;
 					overflow: hidden;
 				}
+				.makechoice .topping{
+					color: #828282;
+					font-size: 12px;
+					width: 93.5%;
+					height: 38px;
+					border: 1px solid silver;
+					line-height: 40px;
+					vertical-align: middle;
+					padding-left: 5%;
+				}
 				.container {
 					width: 40%;
 					display: block;
 					position: relative;
 					cursor: pointer;
-					font-size: 18px;
+					font-size: 14px;
 					color: grey;
 					line-height: 40px;
 					vertical-align: middle;
@@ -496,7 +520,7 @@
 					width: 17px;
 					height: 17px;
 					float: left;
-					margin-left: 15px;
+					margin-left: 20px;
 					color: #fff;
 					font-size: 18px;
 					text-align: center;
@@ -511,8 +535,8 @@
 					width: 17px;
 					height: 17px;
 					background-color: silver;
-					float: left;
-					margin-left: 15px;
+					float: right;
+					margin-right: 20px;
 					color: #fff;
 					text-align: center;
 					font-size: 18px;
@@ -526,14 +550,21 @@
 					float: left;
 					margin: 5% 0;
 				}
+				.priceholder span{
+					line-height: 60px;
+					vertical-align: bottom;
+				}
 				.step4{
-					width: 17%;
+					width: 30%;
 					float: left;
+					font-size: 36px;
 				}
 				#weight{
-					width: 6%;
 					float: left;
 					margin-left: 1%;
+					margin-right: 1%;
+					line-height: 60px;
+					vertical-align: bottom;
 				}
 				.roundholder{
 					width: 45px;
@@ -560,6 +591,13 @@
 				.round4{
 					background-color: red;
 				}
-				
+				h1,h2{
+					font-size: 48px;
+					margin-bottom: 25px;
+					font-weight: bold;
+				}
+				h2{
+					font-size: 36px;
+				}
 				
 
