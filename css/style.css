@@ -67,10 +67,32 @@
 					text-align: center;
 					padding-top: 9px;
 					padding-bottom: 22px;
+					#padding: 19px 6px 22px 6px; 
 					overflow: hidden;
 					-webkit-box-shadow: 1px 1px 13px 3px rgba(111,111,111,1);
 					box-shadow: 1px 1px 13px 3px rgba(111,111,111,1);
+					font-size: 0.9em;
 					
+				}
+				#ameropic{
+					top: 150%;
+				}
+				#italopic{
+					top: 190%;
+				}
+				#hotdogpic{
+					top: 230%;
+				}
+				#cheesepic{
+					top: 270%;
+				}
+				.description{
+					width: 90%;
+					margin: 5% auto;
+					#padding-bottom: 50px;
+				}
+				.description p{
+					margin-bottom: 2%;
 				}
 				#amero, #italo, #hotdog, #cheese{
 					width: 85%;
@@ -81,6 +103,8 @@
 				}
 				.tiestoname{
 					margin-left: 26%;
+					line-height: 45px;
+					vertical-align: middle;
 
 				}
 				#amero:hover{
@@ -126,7 +150,7 @@
 				}
 				#link, #lin{
 					border: 1px solid #eee;
-					width: 74.7%;
+					width: 74.4%;
 					height: 40px;
 					background-color: #fffaf4;
 					margin-right: 130px;
@@ -152,7 +176,7 @@
 					background-color: white;
 				}
 				.sizenew35, .sizenew30, .sizenew25, .white35, .white25{
-					width: 104px;
+					width: 25.6%;
 					float: left;
 					background-color: #ede0d0;
 					margin: 2%;
@@ -192,7 +216,7 @@
 					background: url(../img/product-size.png);
 					background-position: 0 -75px;
 					float: left;
-					margin: 12% 15%;
+					margin: 12% 17%;
 				}
 				.size30{
 					width: 69px;
@@ -200,7 +224,7 @@
 					background: url(../img/product-size.png);
 					background-position: -69px -75px;
 					float: left;
-					margin: 12% 15%;
+					margin: 12% 17%;
 				}
 				.size25{
 					width: 69px;
@@ -208,7 +232,7 @@
 					background: url(../img/product-size.png);
 					background-position: 69px -75px;
 					float: left;
-					margin: 12% 15%;
+					margin: 12% 17%;
 				}
 				.freesauce{
 					width: 31%;
@@ -264,11 +288,14 @@
 				#hidden .mandatory2{
 					background-image: url(../img/white_sauce.png);
 					display: block;
+					width: 24%;
+					height: 111px;
 				}
 				select{
 					width: 90%;
 					height: 20px;
 					margin-top: 75%;
+					margin-left: 5%;
 				}
 				.meat, .seafood, .vegetable, .cheese{
 					float: left;
@@ -314,7 +341,7 @@
 				}
 				.mholder, .sholder, .vholder, .cholder{
 					float: left;
-					width: 24.2%;
+					width: 24%;
 					height: 58px;
 					border: 1px solid silver;
 					background-color: white;
@@ -333,7 +360,7 @@
 				}
 				.meatstuff, .seastuff, .vegetstuff, .cheesestuff{
 					float: left;
-					width: 24.2%;
+					width: 24%;
 					height: 111px;
 					border: 1px solid silver;
 					background-color: white;
@@ -428,7 +455,7 @@
 				.makechoice .topping{
 					color: #828282;
 					font-size: 12px;
-					width: 93.5%;
+					width: 93%;
 					height: 38px;
 					border: 1px solid silver;
 					line-height: 40px;
@@ -442,7 +469,7 @@
 					cursor: pointer;
 					font-size: 14px;
 					color: grey;
-					line-height: 40px;
+					line-height: 45px;
 					vertical-align: middle;
 					-webkit-user-select: none;
 					-moz-user-select: none;
